@@ -1,0 +1,45 @@
+# Website Configuration Data for YU Interiors
+site_settings:
+  title: "YU Interiors | Premium Kitchens & Wardrobes Pallikaranai"
+  brand_name: "YU INTERIORS"
+
+hero:
+  headline: "Modern Interior Spaces Handcrafted in Chennai."
+  subheadline: "We transform residential spaces in Pallikaranai into high-utility, stunning homes. We specialize in long-lasting modular kitchens, customized boutique wardrobes, and end-to-end living space handovers."
+  cta_text: "Book a Consultation"
+  image_url: "https://unsplash.com"
+
+services_section:
+  heading: "Our Specialized Expertise"
+  items:
+    - title: "Modular Kitchens"
+      description: "Ergonomic layouts engineered with premium water-resistant materials, anti-scratch finishes, and smooth pull-out storage systems for modern Indian cooking."
+    - title: "Boutique Wardrobes"
+      description: "Floor-to-ceiling optimized wardrobes featuring sleek sliding shutters, tinted profile glass, and custom-divided storage bays for personal organization."
+    - title: "Full House Interiors"
+      description: "Complete structural alignment including customized false ceilings, modern entertainment units, structural lighting plans, and turnkey bedroom setups."
+
+portfolio_section:
+  heading: "Design Concept Showcase"
+  subheading: "A conceptual preview of our work across residential properties."
+  projects:
+    - title: "Parallel Modular Kitchen"
+      category: "Kitchen"
+      image_url: "https://unsplash.com"
+    - title: "Sliding Wardrobe with Lofts"
+      category: "Wardrobe"
+      image_url: "https://unsplash.com"
+    - title: "Contemporary Living Area TV Wall"
+      category: "Full House"
+      image_url: "https://unsplash.com"
+
+contact_section:
+  heading: "Let's Discuss Your Space"
+  subheading: "Fill out the enquiry form or reach us through direct channels to coordinate a measurement evaluation layout maps visit."
+  phone: "+91 99761 02382"
+  email: "info@yuinteriors.in"
+  address_line1: "Jeyachandran Nagar 1st Main Road,"
+  address_line2: "Near Fantastic Jeyachandran Store, Pallikaranai,"
+  address_line3: "Chennai, Tamil Nadu – 600100"
+  timings: "Mon - Sat: 10:00 AM - 07:00 PM (Sunday Closed)"
+  formspree_url: "https://formspree.io"

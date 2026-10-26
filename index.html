@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="site-title">YU Interiors</title>
+    <!-- Tailwind CSS for Styling -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- JS-YAML Engine to parse yaml natively in the browser -->
+    <script src="https://cloudflare.com"></script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased scroll-smooth">
+
+    <!-- GLOBAL NAVIGATION -->
+    <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div id="brand-name" class="text-xl font-bold tracking-wider uppercase text-stone-900">...</div>
+            <nav class="space-x-6 text-sm font-medium uppercase tracking-wide">
+                <a href="#services" class="hover:text-amber-700 transition">Services</a>
+                <a href="#portfolio" class="hover:text-amber-700 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-amber-700 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- INTRO HERO BLOCK -->
+    <section class="max-w-6xl mx-auto px-6 py-16 text-center md:text-left md:flex items-center justify-between gap-12">
+        <div class="max-w-xl space-y-6">
+            <h1 id="hero-headline" class="text-4xl md:text-5xl font-serif text-stone-900 leading-tight">...</h1>
+            <p id="hero-subheadline" class="text-stone-600 text-lg leading-relaxed">...</p>
+            <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#contact" id="hero-cta" class="inline-block bg-stone-950 text-white px-8 py-3 text-sm font-medium tracking-wide uppercase hover:bg-stone-800 transition text-center">...</a>
+                <a href="" id="hero-phone-btn" class="inline-block bg-white text-stone-900 border border-stone-300 px-8 py-3 text-sm font-medium tracking-wide uppercase hover:bg-stone-100 transition text-center">Call Now</a>
+            </div>
+        </div>
+        <div class="mt-8 md:mt-0 w-full md:w-1/2">
+            <img id="hero-img" src="" alt="Interior Concept" class="w-full h-80 object-cover shadow-sm rounded border border-stone-200">
+        </div>
+    </section>
+
+    <!-- HIGH DEMAND SERVICES GRID -->
+    <section id="services" class="bg-stone-100 py-16 border-y border-stone-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 id="services-heading" class="text-3xl font-serif text-stone-900 text-center mb-12">...</h2>
+            <div id="services-grid" class="grid md:grid-cols-3 gap-8">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SHOWCASE -->
+    <section id="portfolio" class="max-w-6xl mx-auto px-6 py-16">
+        <h2 id="portfolio-heading" class="text-3xl font-serif text-stone-900 text-center mb-2">...</h2>
+        <p id="portfolio-subheading" class="text-stone-500 text-center max-w-md mx-auto mb-12 text-sm">...</p>
+        <div id="portfolio-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Injected via JavaScript -->
+        </div>
+    </section>
+
+    <!-- CONTACT & FORM SECTION -->
+    <section id="contact" class="bg-stone-900 text-stone-100 py-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+            
+            <!-- Contact Info -->
+            <div class="space-y-6 md:pr-6">
+                <h2 id="contact-heading" class="text-3xl font-serif text-white">...</h2>
+                <p id="contact-subheading" class="text-stone-400 text-sm leading-relaxed">...</p>
+                
+                <div class="pt-6 border-t border-stone-800 space-y-6">
+                    <div>
+                        <span class="text-stone-500 text-xs block uppercase tracking-widest mb-1">Direct Phone</span>
+                        <a href="" id="contact-phone" class="text-2xl text-amber-400 font-medium hover:underline">...</a>
+                    </div>
+                    <div>
+                        <span class="text-stone-500 text-xs block uppercase tracking-widest mb-1">Business Inbox</span>
+                        <a href="" id="contact-email" class="text-lg text-amber-400 hover:underline">...</a>
+                    </div>
+                    <div>
+                        <span class="text-stone-500 text-xs block uppercase tracking-widest mb-1">Office Location</span>
+                        <p id="contact-address" class="text-stone-300 text-base leading-relaxed">...</p>
+                    </div>
+                    <div>
+                        <span class="text-stone-500 text-xs block uppercase tracking-widest mb-1">Standard Timings</span>
+                        <p id="contact-timings" class="text-stone-300 text-sm">...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lead Submission Form Formspree Entry -->
+            <div class="bg-stone-800 p-8 rounded-lg shadow-xl border border-stone-700/50">
+                <h3 class="text-xl font-medium text-white mb-6">Send an Inquiry</h3>
+                <form id="enquiry-form" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1" for="name">Your Name</label>
+                        <input type="text" name="name" id="name" required class="w-full bg-stone-900 border border-stone-700 rounded px-4 py-2.5 text-stone-100 placeholder-stone-600 focus:outline-none focus:border-amber-500 text-sm" placeholder="Enter full name">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1" for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" required class="w-full bg-stone-900 border border-stone-700 rounded px-4 py-2.5 text-stone-100 placeholder-stone-600 focus:outline-none focus:border-amber-500 text-sm" placeholder="10-digit mobile number">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1" for="service">Service Required</label>
+                        <select name="service" id="service" required class="w-full bg-stone-900 border border-stone-700 rounded px-4 py-2.5 text-stone-300 focus:outline-none focus:border-amber-500 text-sm">
+                            <option value="Modular Kitchen">Modular Kitchen</option>
+                            <option value="Boutique Wardrobes">Boutique Wardrobes</option>
+                            <option value="Full House Interior">Full House Interior</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1" for="message">Project Brief</label>
+                        <textarea name="message" id="message" rows="4" required class="w-full bg-stone-900 border border-stone-700 rounded px-4 py-2.5 text-stone-100 placeholder-stone-600 focus:outline-none focus:border-amber-500 text-sm" placeholder="Describe your house requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-amber-500 text-stone-950 py-3 rounded text-sm uppercase tracking-wider font-semibold hover:bg-amber-400 transition shadow-md">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DYNAMIC DATA BINDING SCRIPT -->
+    <script>
+        fetch('index.yaml')
+            .then(res => res.text())
+            .then(yamlString => {
+                const data = jsyaml.load(yamlString);
+                
+                // Set Core Configs
+                document.getElementById('site-title').innerText = data.site_settings.title;
+                document.getElementById('brand-name').innerText = data.site_settings.brand_name;
+                
+                // Bind Hero Data
+                document.getElementById('hero-headline').innerText = data.hero.headline;
+                document.getElementById('hero-subheadline').innerText = data.hero.subheadline;
+                document.getElementById('hero-cta').innerText = data.hero.cta_text;
+                document.getElementById('hero-img').src = data.hero.image_url;
+                document.getElementById('hero-phone-btn').href = "tel:" + data.contact_section.phone.replace(/\s+/g, '');
+
+                // Bind Services Setup
+                document.getElementById('services-heading').innerText = data.services_section.heading;
+                let servicesHtml = '';
+                data.services_section.items.forEach(item => {
+                    servicesHtml += `
+                        <div class="bg-white p-8 rounded shadow-sm border border-stone-200/60">
+                            <h3 class="text-xl font-medium text-stone-900 mb-3">${item.title}</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">${item.description}</p>
+                        </div>`;
+                });
+                document.getElementById('services-grid').innerHTML = servicesHtml;
+
+                // Bind Portfolio Setup
+                document.getElementById('portfolio-heading').innerText = data.portfolio_section.heading;
+                document.getElementById('portfolio-subheading').innerText = data.portfolio_section.subheading;
+                let portfolioHtml = '';
+                data.portfolio_section.projects.forEach(proj => {
+                    portfolioHtml += `
+                        <div class="group relative overflow-hidden bg-stone-200 rounded border border-stone-300">
